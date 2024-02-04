@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-image: url(./IMAGE/body\ care.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+    font-family: "Montserrat", sans-serif;
+}
+.form{
+    background: rgba(255, 255, 255, 0.38);
+    border-radius: 8px;
+    width: 589px;
+    height: 833px;
+    margin-top: 70px;
+    margin-left: 23px;       
+}
+form{
+    width: 346px;
+    height: 694px;
+    margin-top: 94px;
+    margin-left: 121px;
+    padding-top: 50px;
+
+    
+    
+} 
+input{
+    width: 345px;
+    height: 48px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    
+    
+        
+}
+
+button{
+    width: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: #6DA01E;
+    border: 2px solid #6DA01E;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+p{
+    font-size: small;
+    text-align: center;
+    
+}
+h1{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+input[type='submit']{
+    background-color: #6DA01E;
+    color: #fff;
+    border: none;
+    border-radius: 5px; 
+}
+.pass{
+    position: relative;
+}
+.pass img{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    
+}
+a{
+    text-decoration: none;
+    color: #6DA01E;
+}
+
+@media only screen and (max-width: 720px){
+    body{
+        background-image: url(./IMAGE/body\ care.png);
+        width: 720px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+}
+
