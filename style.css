@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
 
 body{
     background-image: url(./IMAGE/body\ care.png);
@@ -6,6 +7,8 @@ body{
     background-repeat: no-repeat;
     background-position: center;   
     font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    display: block;
 }
 .form{
     background: rgba(255, 255, 255, 0.38);
@@ -21,22 +24,14 @@ form{
     margin-top: 94px;
     margin-left: 121px;
     padding-top: 50px;
-
-    
-    
 } 
 input{
     width: 345px;
     height: 48px;
     border-radius: 5px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    
-    
-    
-        
+    margin-bottom: 10px;       
 }
-
 button{
     width: 345px;
     display: flex;
@@ -62,7 +57,7 @@ h1{
     margin-bottom: 10px;
     font-size: 20px;
 }
-input[type='submit']{
+.input{
     background-color: #6DA01E;
     color: #fff;
     border: none;
@@ -74,22 +69,28 @@ input[type='submit']{
 .pass img{
     position: absolute;
     top: 45px;
-    right: 10px;
-    
+    right: 10px; 
 }
 a{
     text-decoration: none;
     color: #6DA01E;
+    display: inline-block;
 }
 
-@media only screen and (max-width: 720px){
-    body{
-        background-image: url(./IMAGE/body\ care.png);
-        width: 720px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-
+@media only screen and (max-width: 480px) {
+    .form{
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 8px;
+        width: 389px;
+        height: 833px;
+        margin-top: 60px;
+        margin-left: 23px;       
     }
-}
 
+    form{
+        width: 90%;
+        height: 50%;
+        margin-left: 30px;
+        padding-top: 30px;
+    }    
+}
