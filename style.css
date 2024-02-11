@@ -10,14 +10,104 @@ body{
     box-sizing: border-box;
     display: block;
 }
-.form{
+.form-content{
     background: rgba(255, 255, 255, 0.38);
+    display: block;
     border-radius: 8px;
-    width: 589px;
-    height: 833px;
-    margin-top: 70px;
-    margin-left: 23px;       
+    margin-top: 60px;
+    margin-left: 16px;
+    width: 400px; 
+    height: 767px;
+    padding: 90px;
 }
+label{
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+.pass{
+    position: relative;
+    margin-top: 15px;
+}
+.pass>img{
+    position: absolute;
+    right: 10px;
+    bottom: 0.5em; 
+}
+button{
+    background-color: transparent;
+    color: #6DA01E;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 2px solid #6DA01E;
+    border-radius: 5px;
+    width: 100%;
+}
+#IMAGE{
+    mix-blend-mode: darken;
+    cursor: progress;
+}
+
+a{
+    text-decoration: none;
+    color: #6DA01E;
+    font-size: 16px;
+}
+.input{
+    border: none;
+    border-radius: 5px;
+    background-color: #6DA01E;
+    color: white;
+    font-size: 16px;
+}
+p{
+    text-align: center;
+    font-size: 16px;   
+}
+h1{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+/* Mobile styles for screens up to 767px width*/
+@media screen and (max-width: 767px) {
+    .form-content{
+        width: 400px;
+        height: 600px;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding-top: 40px;
+    }
+}
+/* Mobile styles for screens up to 480px width*/
+@media screen and (max-width: 480px) {
+    .form-content{
+        width: 75%;
+        height: 30%;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding: 40px;
+        
+    }    
+}
+
+
+
+
+
+/*
 form{
     width: 346px;
     height: 694px;
@@ -77,7 +167,7 @@ a{
     display: inline-block;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width:480px) {
     .form{
         background: rgba(255, 255, 255, 0.8);
         border-radius: 8px;
@@ -93,4 +183,4 @@ a{
         margin-left: 30px;
         padding-top: 30px;
     }    
-}
+}*/
